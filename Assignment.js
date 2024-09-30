@@ -29,7 +29,7 @@ function chooseRock(){
         losses ++;
     }
 
-    updateResult(result)
+    updateResult(result, userChoice, computerChoice)
 }
 
 function choosePaper(){
@@ -48,7 +48,7 @@ function choosePaper(){
         result = 'lose';
         losses ++;
     }
-    updateResult(result)
+    updateResult(result, userChoice, computerChoice)
 }
 
 function chooseScissors(){
@@ -67,10 +67,16 @@ function chooseScissors(){
         result = 'lose';
         losses ++;
     }
-    updateResult(result)
+    updateResult(result, userChoice, computerChoice)
 }
 
 
-function updateResult(result) {
+function updateResult(result, userChoice, computerChoice) {
     document.getElementById('Result').textContent = result;
+    document.getElementById('userChoice').textContent = userChoice;
+    document.getElementById('computerChoice').textContent = computerChoice;
 }
+
+
+
+
