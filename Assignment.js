@@ -11,7 +11,6 @@ function computerRandomChoice() {
     return choices[Math.floor(Math.random() * 3)];
 }
 
-
 function chooseRock(){
     userChoice = 'Rock';
     computerChoice = computerRandomChoice();
@@ -28,8 +27,8 @@ function chooseRock(){
         result = 'lose';
         losses ++;
     }
-
     updateResult(result, userChoice, computerChoice)
+    updateScore()
 }
 
 function choosePaper(){
@@ -49,6 +48,7 @@ function choosePaper(){
         losses ++;
     }
     updateResult(result, userChoice, computerChoice)
+    updateScore()
 }
 
 function chooseScissors(){
@@ -68,6 +68,7 @@ function chooseScissors(){
         losses ++;
     }
     updateResult(result, userChoice, computerChoice)
+    updateScore()
 }
 
 
@@ -77,6 +78,10 @@ function updateResult(result, userChoice, computerChoice) {
     document.getElementById('computerChoice').textContent = computerChoice;
 }
 
-
+function updateScore(){
+    document.getElementById('wins').textContent = wins;
+    document.getElementById('losses').textContent = losses;
+    document.getElementById('ties').textContent = ties;
+}
 
 
