@@ -11,13 +11,13 @@
 
     <div class="scorebar">
         <div class="yourScore">
-            <p>Your Score:</p>
+            <p>Your Score: <span id="wins">0</span></p>
         </div>
         <div class="computerScore">
-            <p>Computer Score:</p>
+            <p>Computer Score: <span id="losses">0</span></p>
         </div>
         <div class="Ties">
-            <p>Number of Ties:</p>
+            <p>Number of Ties: <span id="ties">0</span></p>
         </div>
     </div>
 
@@ -37,6 +37,18 @@
     <button onclick="chooseRock()">Rock</button>
     <button onclick="choosePaper()">Paper</button>
     <button onclick="chooseScissors()">Scissors</button>
+</div>
+
+<div class="choices">
+    <div class="yourChoice">
+        <p>Your Choice: <span id="userChoice">None</span></p>
+    </div>
+    <div class="computerChoice">
+        <p>Computer's Choice: <span id="computerChoice">None</span></p>
+    </div>
+    <div class="Result">
+        <p>Result: <span id="Result">None</span></p>
+    </div>
 </div>
 
 
