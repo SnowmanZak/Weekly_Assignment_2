@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rock, Paper, Scissors Game</h1>
+
+    <div class="scorebar">
+        <div class="yourScore">
+            <p>Your Score: <span id="wins">0</span></p>
+        </div>
+        <div class="computerScore">
+            <p>Computer Score: <span id="losses">0</span></p>
+        </div>
+        <div class="Ties">
+            <p>Number of Ties: <span id="ties">0</span></p>
+        </div>
+    </div>
+
+    <div class="images">
+        <div class="column">
+          <img src="Rock.png" alt="Snow">
+        </div>
+        <div class="column">
+          <img src="Paper.png" alt="Forest">
+        </div>
+        <div class="column">
+          <img src="Scissors.png" alt="Mountains">
+        </div>
+      </div>
+
+<div class="buttons">
+    <button onclick="chooseRock()">Rock</button>
+    <button onclick="choosePaper()">Paper</button>
+    <button onclick="chooseScissors()">Scissors</button>
+</div>
+
+<div class="choices">
+    <div class="yourChoice">
+        <p>Your Choice: <span id="userChoice">None</span></p>
+    </div>
+    <div class="computerChoice">
+        <p>Computer's Choice: <span id="computerChoice">None</span></p>
+    </div>
+    <div class="Result">
+        <p>Result: <span id="Result">None</span></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="Assignment.js"></script>
+</body>
+</html>
